@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "0": "technical",
+        "1": "data (things)",
+        "2": "containers"
+    },
+    "description": "Dynamic Height Adjuster plugin for Bubble enables you to effortlessly adjust any element's height to dynamically fill the remaining space on the screen. Just set the ID of the element, and the plugin takes care of automatically adapting its height, providing responsive and professional-looking layouts without custom code.\n\nFeatures:\n\nAutomatic Height Adjustment: Easily make any element fill the remaining screen height.\n\nDynamic & Responsive: Automatically adjusts on window resize.\n\nCustomizable Margins: Fine-tune spacing dynamically between elements.\n\nNo coding needed: Simple and user-friendly configuration, just enter an element ID.\n\nHow It Works:\n\nSimply insert the plugin's element into your page, specify the target element's ID, and optionally define a custom margin. Your element instantly adjusts its height dynamically on load and window resize events.\n\nUsage Scenarios:\n\nExpand repeating groups dynamically.\n\nCreate dashboards or layouts that perfectly fit any screen size.\n\nResponsive applications that automatically adapt layouts without extra complexity.",
+    "image": "//meta-q.cdn.bubble.io/f1746761468861x504095511728482700/heightadjuster2.png",
+    "license": "open_source",
+    "name": "Dynamic Height Adjuster",
+    "plugin_instructions": "Step-by-step Guide to Setup Dynamic Height Adjuster in your Bubble app:\n\n1. Install & Insert Plugin Element\nInstall the \"Dynamic Height Adjuster\" plugin via Bubble’s plugin tab.\n\nDrag and drop the plugin element onto your page. (It’s an invisible element.)\n\n2. Configure the Element ID\nSelect the Dynamic Height Adjuster element on your Bubble editor page.\n\nIn the element’s property panel, specify the Target Element ID.\n(Ensure the target element has the matching ID set in Bubble’s properties.)\n\n3. Adjust Custom Margin (optional)\nBy default, the plugin uses a 20px margin at the bottom.\n\nIf needed, specify a custom margin value (in pixels) directly in the plugin’s property panel to refine the layout precisely.\n\n4. No Workflow Needed\nThe plugin runs automatically when the page loads.\n\nHeight adjustment dynamically triggers on browser resize, providing instant responsiveness without additional workflows.\n\n5. Preview & Test\nPreview your page and watch as your specified element dynamically adjusts height perfectly."
+}

@@ -1,0 +1,33 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 20,
+        "width": 20
+    },
+    "display": "HeightAdjuster",
+    "fields": {
+        "AAD": {
+            "caption": "Target Element ID",
+            "doc": "The ID of the Bubble element to dynamically resize",
+            "editor": "StaticText",
+            "name": "target_element_id",
+            "rank": 0
+        },
+        "AAE": {
+            "caption": "Margin Bottom",
+            "default_val": 20,
+            "doc": "Margin space at the bottom in pixels",
+            "editor": "StaticNumber",
+            "name": "margin_bottom",
+            "rank": 1
+        }
+    },
+    "icon": "ion-android-contract",
+    "platform_type": "web",
+    "property_applications": {
+        "Background": true,
+        "MinWidth": true,
+        "resizable": true
+    }
+}

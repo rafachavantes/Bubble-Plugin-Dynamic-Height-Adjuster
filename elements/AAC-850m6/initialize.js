@@ -1,24 +1,28 @@
 function(instance, context) {
 
-    function adjustHeight() {
-        const targetID = instance.data.targetID;
+    function resizeElement() {
+        const id = instance.data.targetID;
+        const marginTop = instance.data.marginTop || 0;
+        const marginLeft = instance.data.marginLeft || 0;
         const marginBottom = instance.data.marginBottom || 20;
-        const el = document.getElementById(targetID);
+        const marginRight = instance.data.marginRight || 20;
+        const el = document.getElementById(id);
 
         if (el) {
-            const applyHeight = () => {
-                const availableHeight = window.innerHeight - el.getBoundingClientRect().top - marginBottom;
+            const applySize = () => {
+                const availableHeight = window.innerHeight - el.getBoundingClientRect().top - marginBottom - marginTop;
+                const availableWidth = window.innerWidth - marginRight - marginLeft;
+
                 el.style.minHeight = availableHeight + "px";
-                console.log("✅ Dynamic Height Adjuster applied:", availableHeight);
+                el.style.setProperty("width", availableWidth + "px", "important");
             };
 
-            applyHeight();
-            window.addEventListener("resize", applyHeight);
+            applySize();
+            window.addEventListener("resize", applySize);
         } else {
-            console.error("❌ Element ID not found:", targetID);
+            console.error("❌ Dynamic Resizer: Element ID not found →", id);
         }
     }
 
-    // run after short delay to ensure Bubble DOM is ready
-    setTimeout(adjustHeight, 300);
+    setTimeout(resizeElement, 300);
 }

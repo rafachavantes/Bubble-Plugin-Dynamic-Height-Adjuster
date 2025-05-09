@@ -10,17 +10,43 @@
         "AAD": {
             "caption": "Target Element ID",
             "doc": "The ID of the Bubble element to dynamically resize",
-            "editor": "StaticText",
+            "editor": "DynamicValue",
             "name": "target_element_id",
-            "rank": 0
+            "rank": 0,
+            "value": "text"
         },
         "AAE": {
-            "caption": "Margin Bottom",
-            "default_val": 20,
+            "caption": "Margin Bottom (px)",
+            "default_val": 0,
             "doc": "Margin space at the bottom in pixels",
-            "editor": "StaticNumber",
-            "name": "margin_bottom",
-            "rank": 1
+            "editor": "DynamicValue",
+            "name": "margin_bottom_px",
+            "rank": 1,
+            "value": "number"
+        },
+        "AAH": {
+            "caption": "Margin Right (px)",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_right_px",
+            "rank": 2,
+            "value": "number"
+        },
+        "AAI": {
+            "caption": "Margin Left (px)",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_left_px",
+            "rank": 3,
+            "value": "number"
+        },
+        "AAJ": {
+            "caption": "Margin Top (px)",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_top_px",
+            "rank": 4,
+            "value": "number"
         }
     },
     "icon": "ion-android-contract",
